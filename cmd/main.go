@@ -23,7 +23,7 @@ func main() {
 	})
 
 	app.Use(logger.New(logger.Config{
-		Format:     "${cyan}[${time}] ${status} - ${method} ${path}\n",
+		Format:     "[${time}] ${status} - ${method} ${path}\n",
 		TimeZone:   "Africa/Nairobi",
 		TimeFormat: "2006-01-02 15:04:05",
 	}))
